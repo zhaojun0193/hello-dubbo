@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hello-dubbo-provider
+  main:
+    allow-bean-definition-overriding: true # 允许重名bean覆盖，设置后不会与Spring Boot冲突
+dubbo:
+  protocol:
+    status: server
+    name: dubbo
+    port: 12345
+  registry:
+    address: zookeeper://192.168.179.143:2181,192.168.179.143:2182,192.168.179.143:2183 #注册中心地址
+    file: dubbo-registry/dubbo-registry.properties
+demo:
+  service:
+    version: 1.0.0
+
