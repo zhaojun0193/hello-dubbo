@@ -10,7 +10,7 @@ dubbo:
     port: 12345
   registry:
     address: zookeeper://192.168.179.143:2181,192.168.179.143:2182,192.168.179.143:2183 #注册中心地址
-    file: dubbo-registry/dubbo-registry.properties
+    file: dubbo-registry/dubbo-registry.properties  #注册中心的本地缓存配置
 demo:
   service:
     version: 1.0.0
